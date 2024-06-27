@@ -24,7 +24,7 @@ export async function getManifest(): Promise<Manifest.WebExtensionManifest> {
     },
     content_scripts: [
       {
-        matches: ['http://*/*', 'https://*/*'],
+        matches: ['https://www.bilibili.com/*', 'https://*/*'],
         js: ['./content/index.global.js']
       }
     ],
